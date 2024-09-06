@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-// Base User Schema
 const branchSchema = new mongoose.Schema({
     name: {
         type: String,

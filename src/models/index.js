@@ -1,5 +1,5 @@
 import { Branch } from "./branch.js"
-import { Product } from "./products.js"
+import { Product } from "./product.js"
 import { Category } from "./category.js"
 import { Admin, Customer, DeliveryPartner } from "./user.js"
 import { Order } from "./order.js"

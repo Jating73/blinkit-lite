@@ -1,4 +1,4 @@
-import { Customer, DeliveryPartner } from "../../models/user";
+import { Customer, DeliveryPartner } from "../../models/user.js";
 
 import jwt from 'jsonwebtoken'
 
@@ -175,6 +175,17 @@ export const fetchUser = async (req, reply) => {
             message: "User Fetched Successfully",
             user
         })
+
+    } catch (error) {
+        return reply.status(500).send({
+            message: "An error occured",
+            error
+        })
+    }
+}
+
+export const updateUser = async (req, reply) => {
+    try {
 
     } catch (error) {
         return reply.status(500).send({
